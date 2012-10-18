@@ -40,7 +40,7 @@
 	</dependencies>
 
 	<build>
-		<pluginManagement>
+		<!-- <pluginManagement> -->
 			<plugins>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -57,6 +57,7 @@
 					</executions>
 				</plugin>
 
+<!--
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <configuration>
@@ -72,7 +73,7 @@
 					<configuration>
 						<lifecycleMappingMetadata>
 							<pluginExecutions>
-								<!-- copy-dependency plugin -->
+								<#!-#- copy-dependency plugin -#-#>
 								<pluginExecution>
 									<pluginExecutionFilter>
 										<groupId>org.apache.maven.plugins</groupId>
@@ -90,8 +91,9 @@
 						</lifecycleMappingMetadata>
 					</configuration>
 				</plugin>
+-->
 
 			</plugins>
-		</pluginManagement>
+		<!-- </pluginManagement> -->
 	</build>
 </project>
