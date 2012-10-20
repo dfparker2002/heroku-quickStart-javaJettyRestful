@@ -39,12 +39,12 @@
   
   <servlet>
     <servlet-name>front</servlet-name>
-    <servlet-class>com.example.FrontServlet</servlet-class>
+    <servlet-class>com.example.servlets.FrontServlet</servlet-class>
   </servlet>
     
   <servlet>
     <servlet-name>root</servlet-name>
-    <servlet-class>com.example.RootServlet</servlet-class>
+    <servlet-class>com.example.servlets.RootServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
