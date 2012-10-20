@@ -13,13 +13,13 @@ import javax.servlet.http.HttpServletResponse;
 
 public class FrontServlet extends HttpServlet {
 
+	private static final long serialVersionUID = 366388279802249610L;
+
 	@Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         //ServletOutputStream out = resp.getOutputStream();
-        
-        //out.write("Hello Heroku! ".getBytes());
-        //out.write("Deployed first change!".getBytes());
+        //out.write("Hello Heroku!".getBytes());
         //out.flush();
         //out.close();
         

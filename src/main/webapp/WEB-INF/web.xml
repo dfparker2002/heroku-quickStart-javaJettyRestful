@@ -59,7 +59,7 @@
 
   <servlet-mapping>
     <servlet-name>front</servlet-name>
-    <url-pattern>/q/*</url-pattern>
+    <url-pattern>/dp/*</url-pattern>
   </servlet-mapping>
 
   <servlet-mapping>
