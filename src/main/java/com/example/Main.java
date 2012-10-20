@@ -1,5 +1,13 @@
 package com.example;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+import java.util.logging.Logger;
+
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.webapp.WebAppContext;
 
@@ -11,12 +19,32 @@ import org.eclipse.jetty.webapp.WebAppContext;
  *
  */
 public class Main {
+	public static final Logger logger = Logger.getLogger("SampleLogging");
+	public static final Properties configuration = new Properties();
+	
+    private static void loadProperties() {
+		InputStream inputStream;
+		try {
+			inputStream = new FileInputStream(new File("app.properties"));
+			configuration.load(inputStream);
+			
+			logger.info(configuration.getProperty("foo.bar"));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			throw new RuntimeException(e);
+		} catch (IOException e) {
+			e.printStackTrace();
+			throw new RuntimeException(e);
+		}
+    }
     
     /**
      * @param args
      */
     public static void main(String[] args) throws Exception{
         String webappDirLocation = "src/main/webapp/";
+        
+        loadProperties();
         
         //The port that we should run on can be set into an environment variable
         //Look for that variable and default to 8080 if it isn't there.
