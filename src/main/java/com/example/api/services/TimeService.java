@@ -1,8 +1,8 @@
-package com.example.services;
+package com.example.api.services;
 
 import java.util.TimeZone;
 
-import com.example.models.Time;
+import com.example.api.models.Time;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
