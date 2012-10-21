@@ -44,6 +44,9 @@ public class Main {
     public static void main(String[] args) throws Exception{
         String webappDirLocation = "src/main/webapp/";
         
+        // for maven local repo dependency testing...
+        new com.example.foobar.Greeting().doGreeting(logger);
+        
         loadProperties();
         
         //The port that we should run on can be set into an environment variable
