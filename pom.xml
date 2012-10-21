@@ -13,6 +13,14 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+    <repositories>
+        <repository>
+            <id>local</id>
+            <name>local repo</name>
+            <url>file://${basedir}/lib</url>
+        </repository>
+    </repositories>
+    
 	<dependencies>
 		<!-- Servlet API -->
 		<dependency>
@@ -70,6 +78,13 @@
         	<groupId>mysql</groupId>
         	<artifactId>mysql-connector-java</artifactId>
         	<version>5.1.6</version>
+        </dependency>
+
+        <!-- local repo example -->
+        <dependency>
+        	<groupId>com.example</groupId>
+        	<artifactId>foobar</artifactId>
+        	<version>1.0.1</version>
         </dependency>
 	</dependencies>
 
