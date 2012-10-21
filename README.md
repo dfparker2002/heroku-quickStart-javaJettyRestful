@@ -8,7 +8,7 @@ This is a template for a lightweight RESTful API using JAX-RS. The sample code i
 
 ## This template includes example local Maven repository.
 
-See https://devcenter.heroku.com/articles/local-maven-dependencies and pom.xml's <repositories/> and <dependency/>.
+See https://devcenter.heroku.com/articles/local-maven-dependencies and pom.xml's `<repositories/>` and `<dependency/>`.
 
 ## Running the application locally
 
