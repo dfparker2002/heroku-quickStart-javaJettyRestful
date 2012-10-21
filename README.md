@@ -6,6 +6,10 @@ This is a template for a web application that uses embedded Jetty. The sample co
 
 This is a template for a lightweight RESTful API using JAX-RS. The sample code is a call for getting the current time.
 
+## This template includes example local Maven repository.
+
+See https://devcenter.heroku.com/articles/local-maven-dependencies and pom.xml's <repositories/> and <dependency/>.
+
 ## Running the application locally
 
 First build with:
